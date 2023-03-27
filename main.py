@@ -9,7 +9,6 @@ def send_welcome(message):
 
 @bot.message_handler(command=['Rajith'])
 def send_mesaage(message) :
-    bot.send_message(message, "Clash Mobitel ⬇️")
-    bot.send_message(message, "https://drive.google.com/uc?export=download&id=1BcVvzqniWc29md6_QnePZSuNqMfb2KjP")
-
+    bot.send_message(message, "https://drive.google.com/uc?export=download&id=1BJfGsK-2iPf4wfTScjF5zB0qN3k0fZM2")
+   
     bot.polling()
