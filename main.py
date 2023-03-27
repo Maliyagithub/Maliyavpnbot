@@ -1,14 +1,19 @@
 import os
 import telebot
 
-bot = telebot.TeleBot("5953671984:AAG9XaarXNDyM0axBHZVTLjtnjwQ6bpIcTE")
+
+bot = telebot.TeleBot("API එක දාහන් උස්සන්නෙ නැතුව මගෙ ඒව")
+
 
 @bot.message_handler(commands=["start"])
 def send_welcome(message):
-    bot.reply_to(message,"Hello i'm maliyavpn Bot")
+  bot.reply_to(message, "Hello! I'm Uvindu Bro Chat Bot")
 
-@bot.message_handler(command=['Rajith'])
-def send_mesaage(message) :
-    bot.send_message(message, "https://drive.google.com/uc?export=download&id=1BJfGsK-2iPf4wfTScjF5zB0qN3k0fZM2")
-   
-    bot.polling()
+
+@bot.message_handler(commands=["how"])
+def send_message(message):
+  bot.send_message(message.chat.id, "https://youtube.com/c/Uvindubro")
+
+
+
+bot.polling()
